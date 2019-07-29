@@ -1,0 +1,62 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r3p7.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Fri Jul 12 18:48:07 PDT 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/piscine-c-exam00/exam_20190713/migriver
+
+= Git history ==================================================================
+$> git -C /var/folders/hm/hz2ybxb5229fnzgs59g851f80000gp/T/tmp1zX7pZ/user log --pretty='%H - %an, %ad : %s'
+513fc8b486238314c3ea221fcb10d131d25d72d1 - Exam 42, Fri Jul 12 18:47:57 2019 -0700 : Add maff_revalpha
+0480e81af63e1d61fec1d49942f87bbaa6190168 - Exam 42, Fri Jul 12 18:42:54 2019 -0700 : Add maff_alpha
+9e46a17374d3021e39ad7433ea62f4f142fb8ec3 - Exam 42, Fri Jul 12 18:28:53 2019 -0700 : Add ft_countdown
+1bf7614dc61a0c8a96c0033a8f2c63569ff882ed - Exam 42, Fri Jul 12 18:21:57 2019 -0700 : Rename only_a to only_z
+3d021a2be9ed54e3fc0aec75dd25d91a12cb5f77 - Exam 42, Fri Jul 12 18:18:02 2019 -0700 : Solve only_a
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/hm/hz2ybxb5229fnzgs59g851f80000gp/T/tmp1zX7pZ/user
+total 16
+-rw-r--r--  1 deepthought  deepthought    12 Jul 12 18:48 .gitignore
+-rw-r--r--  1 deepthought  deepthought  1331 Jul 12 18:48 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 12 18:48 ft_countdown
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 12 18:48 maff_revalpha
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 12 18:48 only_z
+
+/var/folders/hm/hz2ybxb5229fnzgs59g851f80000gp/T/tmp1zX7pZ/user/ft_countdown:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1094 Jul 12 18:48 ft_countdown.c
+
+/var/folders/hm/hz2ybxb5229fnzgs59g851f80000gp/T/tmp1zX7pZ/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1161 Jul 12 18:48 maff_revalpha.c
+
+/var/folders/hm/hz2ybxb5229fnzgs59g851f80000gp/T/tmp1zX7pZ/user/only_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  979 Jul 12 18:48 only_z.c
+ 
+= maff_revalpha ================================================================
+$> gcc -Wextra -Wall -Werror maff_revalpha.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./wvi9rdgqix4rs547e64rk8em
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
