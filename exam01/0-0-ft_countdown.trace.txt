@@ -1,0 +1,47 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r6p2.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Fri Jul 19 18:08:57 PDT 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/piscine-c-exam01/exam_20190720/migriver
+
+= Git history ==================================================================
+$> git -C /var/folders/3h/g2l8k06n0t51cdc7pdgl36840000gp/T/tmpqW2Vl4/user log --pretty='%H - %an, %ad : %s'
+263a31a09282b9ada389b079d17d0de58db24a6d - Exam 42, Fri Jul 19 18:08:24 2019 -0700 : Add ft_countdown
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/3h/g2l8k06n0t51cdc7pdgl36840000gp/T/tmpqW2Vl4/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  236 Jul 19 18:08 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jul 19 18:08 ft_countdown
+
+/var/folders/3h/g2l8k06n0t51cdc7pdgl36840000gp/T/tmpqW2Vl4/user/ft_countdown:
+total 8
+-rw-r--r--  1 deepthought  deepthought  976 Jul 19 18:08 ft_countdown.c
+ 
+= ft_countdown =================================================================
+$> gcc -Wextra -Wall -Werror ft_countdown.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./f2a5wkhuq0c0cbwlfi4fs0pr
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

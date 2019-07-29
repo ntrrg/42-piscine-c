@@ -1,0 +1,66 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r3p4.42.us.org
+Darwin 17.7.0 x86_64
+$> date
+Fri Jul 19 19:24:02 PDT 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 10.0.0 (clang-1000.10.44.4)
+Target: x86_64-apple-darwin17.7.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 10.0.0 (clang-1000.10.44.4)
+Target: x86_64-apple-darwin17.7.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/piscine-c-exam01/exam_20190720/migriver
+
+= Git history ==================================================================
+$> git -C /var/folders/h3/h3yfpsxd0_g943ffwprmr4wr0000gp/T/tmpzLDmP1/user log --pretty='%H - %an, %ad : %s'
+aa5ade0f894675f29451f4fdab77035208231022 - Exam 42, Fri Jul 19 19:23:49 2019 -0700 : Add reverse_bits
+36352e52ce3298e3cbc834e6fdf4376ccda0d7cc - Exam 42, Fri Jul 19 19:23:28 2019 -0700 : Fix ft_strcpy
+e963250f493e23f9490816dd34e63a248c1c7ab3 - Exam 42, Fri Jul 19 18:40:36 2019 -0700 : Add ulstr
+133045d5f7e35a521c3ebfe64acd20589c65f294 - Exam 42, Fri Jul 19 18:18:25 2019 -0700 : Add ft_strcpy
+263a31a09282b9ada389b079d17d0de58db24a6d - Exam 42, Fri Jul 19 18:08:24 2019 -0700 : Add ft_countdown
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/h3/h3yfpsxd0_g943ffwprmr4wr0000gp/T/tmpzLDmP1/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1197 Jul 19 19:24 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 19 19:24 ft_countdown
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 19 19:24 ft_strcpy
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 19 19:24 reverse_bits
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 19 19:24 ulstr
+
+/var/folders/h3/h3yfpsxd0_g943ffwprmr4wr0000gp/T/tmpzLDmP1/user/ft_countdown:
+total 8
+-rw-r--r--  1 deepthought  deepthought  976 Jul 19 19:24 ft_countdown.c
+
+/var/folders/h3/h3yfpsxd0_g943ffwprmr4wr0000gp/T/tmpzLDmP1/user/ft_strcpy:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1024 Jul 19 19:24 ft_strcpy.c
+
+/var/folders/h3/h3yfpsxd0_g943ffwprmr4wr0000gp/T/tmpzLDmP1/user/reverse_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1383 Jul 19 19:24 reverse_bits.c
+
+/var/folders/h3/h3yfpsxd0_g943ffwprmr4wr0000gp/T/tmpzLDmP1/user/ulstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1356 Jul 19 19:24 ulstr.c
+ 
+= reverse_bits =================================================================
+$> gcc -Wextra -Wall -Werror main.c reverse_bits.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./tyffjiixiae8eu21fqnir6pi
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
