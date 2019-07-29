@@ -1,0 +1,71 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r1p10.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Fri Jul 26 19:39:29 PDT 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/piscine-c-exam02/exam_20190727/migriver
+
+= Git history ==================================================================
+$> git -C /var/folders/b1/5dqhl81j2yg2l0s49nk26b3r0000gp/T/tmp7btWay/user log --pretty='%H - %an, %ad : %s'
+81cf3b012b212edb45dab6756b36dfb8bfbde98f - Exam 42, Fri Jul 26 19:39:21 2019 -0700 : Add sort_int_tab
+5da96a27aca4ef5dabf6e2adb406f8c23af5bf9b - Exam 42, Fri Jul 26 19:24:01 2019 -0700 : Add hidenp
+6e29536c7726b9f4440b82af949bdc0aa442d644 - Exam 42, Fri Jul 26 19:03:57 2019 -0700 : Add ft_atoi
+e5c0f1353cc61eab30ebd9a7f5c884deaef7d520 - Exam 42, Fri Jul 26 18:27:53 2019 -0700 : Add search_and_replace
+61ee3c8a6f52f317e98ed83eaf64faf7b2f03b5b - Exam 42, Fri Jul 26 18:11:04 2019 -0700 : Add ft_print_numbers
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/b1/5dqhl81j2yg2l0s49nk26b3r0000gp/T/tmp7btWay/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1271 Jul 26 19:39 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 26 19:39 ft_atoi
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 26 19:39 ft_print_numbers
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 26 19:39 hidenp
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 26 19:39 search_and_replace
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 26 19:39 sort_int_tab
+
+/var/folders/b1/5dqhl81j2yg2l0s49nk26b3r0000gp/T/tmp7btWay/user/ft_atoi:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1698 Jul 26 19:39 ft_atoi.c
+
+/var/folders/b1/5dqhl81j2yg2l0s49nk26b3r0000gp/T/tmp7btWay/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  985 Jul 26 19:39 ft_print_numbers.c
+
+/var/folders/b1/5dqhl81j2yg2l0s49nk26b3r0000gp/T/tmp7btWay/user/hidenp:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1272 Jul 26 19:39 hidenp.c
+
+/var/folders/b1/5dqhl81j2yg2l0s49nk26b3r0000gp/T/tmp7btWay/user/search_and_replace:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1229 Jul 26 19:39 search_and_replace.c
+
+/var/folders/b1/5dqhl81j2yg2l0s49nk26b3r0000gp/T/tmp7btWay/user/sort_int_tab:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1206 Jul 26 19:39 sort_int_tab.c
+ 
+= sort_int_tab =================================================================
+$> gcc -Wextra -Wall -Werror main.c sort_int_tab.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./2fpi94qz7b29i2gkdavvizxu
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
